@@ -45,6 +45,7 @@ int main()
             printf("Wrong choice!!!\n");
         }
     }
+    return 0;
 }
 
 void push(int item)
