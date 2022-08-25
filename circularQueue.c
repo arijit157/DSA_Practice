@@ -103,7 +103,7 @@ int isFull()
 
 int isEmpty()
 {
-    if(rear==-1)
+    if(front==-1)
     {
         return 1;
     }
