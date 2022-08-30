@@ -17,7 +17,7 @@ int main()
     int choice, item;
     while(1)
     {
-        printf("1. Insert at rear\n");
+        printf("\n1. Insert at rear\n");
         printf("2. Insert at front\n");
         printf("3. Delete from rear\n");
         printf("4. Delete from front\n");
@@ -38,13 +38,11 @@ int main()
             insert_front(item);
             break;
             case 3:
-            //scanf("%d", &item);
-            int item=delete_rear();
+            item=delete_rear();
             printf("%d\n", item);
             break;
             case 4:
-            //display();
-            int item=delete_front();
+            item=delete_front();
             printf("%d\n", item);
             break;
             case 5:
@@ -55,6 +53,8 @@ int main()
             default:
             printf("Wrong choice!!!\n");
         }
+        printf("Front = %d\tRear = %d\n", front, rear);
+        display();
     }
     return 0;
 }
@@ -92,7 +92,7 @@ void insert_rear(int item)
     {
         front=0;
     }
-    else if(rear==MAX-1)
+    if(rear==MAX-1)
     {
         rear=0;
     }
