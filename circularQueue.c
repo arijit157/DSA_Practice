@@ -65,8 +65,8 @@ void enqueue(int item)
     }
     else{
         rear++;
-        cqueue[rear]=item;
     }
+    cqueue[rear]=item;
 }
 
 int dequeue()
